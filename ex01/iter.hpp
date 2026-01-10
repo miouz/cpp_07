@@ -3,10 +3,10 @@
 
 #include <cstddef>
 
-template <typename T, const size_t N, typename FUNC>
+template <typename T, const unsigned int N, typename FUNC>
 void iter(T (&array)[N], FUNC func)
 {
-	for (size_t i = 0; i < N; i++)
+	for (unsigned int i = 0; i < N; i++)
 		func(array[i]);
 }
 #endif // !ITER_HPP
