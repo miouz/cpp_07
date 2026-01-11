@@ -24,5 +24,5 @@ class Array
 	};
 };
 
-#include "Array.tpp"
+// #include "Array.tpp"
 #endif // !ARRAY_HPP
