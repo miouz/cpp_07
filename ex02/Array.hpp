@@ -7,7 +7,7 @@ template<typename T>
 class Array
 {
 	T* array_;
-	size_t	size_;
+	unsigned int	size_;
 	public:
 	Array();
 	~Array();
@@ -15,8 +15,9 @@ class Array
 	Array(const Array& other);
 	Array& operator=(const Array& other);
 
-	void	size() const;
-	T&		operator[](unsigned int index) const;
+	const unsigned int&	size() const;
+	T&		operator[](unsigned int index);
+	const T&	operator[](unsigned int index) const;
 	class OutOfBoundException: public std::exception
 	{
 		public:
@@ -24,5 +25,5 @@ class Array
 	};
 };
 
-// #include "Array.tpp"
+#include "Array.tpp"
 #endif // !ARRAY_HPP
