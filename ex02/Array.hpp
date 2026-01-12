@@ -18,12 +18,9 @@ class Array
 	const unsigned int&	size() const;
 	T&		operator[](unsigned int index);
 	const T&	operator[](unsigned int index) const;
-	class OutOfBoundException: public std::exception
-	{
-		public:
-		const char* what() const throw();
-	};
+	void	printArray() const;
 };
 
 #include "Array.tpp"
+
 #endif // !ARRAY_HPP
