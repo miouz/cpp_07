@@ -8,6 +8,6 @@ int main()
 	} catch (const std::exception& e) {
 		std::cout << "Error: " << e.what() << "\n";
 	}
-	return EXIT_SUCCESS;
+	return 0;
 
 }
