@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 #include "Array.hpp"
 #include "test.hpp"
 
